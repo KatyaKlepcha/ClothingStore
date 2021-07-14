@@ -4,6 +4,7 @@ import ProductB from '../../Common/image/ProductCardsPhoto/Product B.svg'
 import ProductC from '../../Common/image/ProductCardsPhoto/Product C.svg'
 import ProductA from '../../Common/image/ProductCardsPhoto/Product A.svg'
 import styled from "styled-components";
+import ProductPage from "../ProductPage/ProductPage";
 
 const Products = styled.div`
   padding: 0 102px 100px 100px;
@@ -24,7 +25,7 @@ const ProductImage = styled.img`
 `;
 
 const ProductDescription = styled.div`
-color: ${(props) => (props.stock ? "grey" : "black")}
+  color: ${(props) => (props.stock ? "grey" : "black")}
 `
 
 
@@ -57,6 +58,11 @@ const ProductPrice = styled(ProductContainer)`
 
 
 export default class Main extends React.Component {
+
+    onClickProduct = () => {
+      <ProductPage/>
+    }
+
     render() {
         return (
             <Products>
@@ -65,7 +71,7 @@ export default class Main extends React.Component {
                     <ProductContainer>
                         <ProductImage src={ProductD}/>
                         <ProductDescription>
-                            <div>Apollo Running Short</div>
+                            <div onClick={this.onClickProduct}>Apollo Running Short</div>
                             <ProductPrice>$50.00</ProductPrice>
                         </ProductDescription>
 
