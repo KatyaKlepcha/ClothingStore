@@ -31,18 +31,18 @@ const ProductDescriptionContainer = styled.div`
   height: 100vh;
   width: 292px;
 `;
-const ProductDescription = styled.div`
+export const ProductDescription = styled.div`
   font-size: 30px;
   line-height: 27px;
   padding-bottom: 20px;
 `;
 
 
-const Model = styled.div`
+export const Model = styled.div`
   font-weight: 600;
 `;
 
-const Availability = styled.div`
+export const Availability = styled.div`
   font-weight: 400;
 `
 const SizeTitle = styled.div`
@@ -57,14 +57,22 @@ const PriceTitle = styled(SizeTitle)`
   padding-bottom: 20px;
 `;
 
-const Price = styled.div`
+export const Price = styled.div`
   font-weight: 700;
   font-size: 24px;
   line-height: 18px;
 `;
 
+const SizeContainer = styled.div`
+  padding-bottom: 20px;
+`;
 
-const SizeButton = styled.button`
+export const SizeButtonWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+export const SizeButton = styled.button`
   width: 63px;
   height: 45px;
   font-size: 16px;
@@ -74,15 +82,6 @@ const SizeButton = styled.button`
   color: #292929;
   border: 1px solid #1D1F22;
 `;
-
-const SizeContainer = styled.div`
-  padding-bottom: 20px;
-`;
-
-const SizeButtonWrapper = styled.div`
-  display: flex;
-  justify-content: space-between;
-`
 
 const PriceContainer = styled.div`
   padding-bottom: 20px;

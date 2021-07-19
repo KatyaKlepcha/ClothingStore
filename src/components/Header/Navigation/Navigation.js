@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
 
-const NavigationWrapper = styled.div`
+const NavigationWrapper = styled.nav`
   display: flex;
   justify-content: space-around;
   width: 160%;

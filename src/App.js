@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import {createGlobalStyle} from 'styled-components';
 import ProductPage from "./components/ProductPage/ProductPage";
+import Cart from "./components/Cart/Cart";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -27,6 +28,7 @@ export default class App extends React.Component {
                 <Header/>
                 <Main/>
                 <ProductPage/>
+                <Cart/>
             </div>
 
         );
